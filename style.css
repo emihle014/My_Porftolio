@@ -1,0 +1,247 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #0c1427 0%, #1a233a 100%);
+    color: #e0e6f0;
+    line-height: 1.7;
+    padding-bottom: 40px;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #00b0ff;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: rgba(10, 16, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2c3e50;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    background: linear-gradient(to right, #4fc3f7, #00b0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a0aec0;
+}
+
+/* Sections */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    background: rgba(25, 35, 60, 0.7);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4fc3f7;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #00b0ff;
+    border-radius: 2px;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #cbd5e0;
+}
+
+/* Flex Layout */
+.main-flex-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.photo-side {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .main-flex-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .photo-side {
+        margin-bottom: 20px;
+    }
+}
+
+/* Profile Photo */
+.profile-photo {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 3px solid #4fc3f7;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    max-width: 220px;
+    transition: transform 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 12px;
+    background: linear-gradient(to right, #0081cb, #00b0ff);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 176, 255, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #006bb3, #0099e6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 176, 255, 0.4);
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+    }
+}
+
+
+/* ...existing code... */
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background-color: rgba(79, 195, 247, 0.2);
+    color: #4fc3f7;
+    font-weight: 600;
+}
+
+tr {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+tr:hover {
+    background-color: rgba(79, 195, 247, 0.1);
+}
+
+/* ...existing code... */
+
+@media (max-width: 600px) {
+    /* ...existing code... */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
