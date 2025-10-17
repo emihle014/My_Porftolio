@@ -10,17 +10,27 @@
 </head>
 
 <body>
-    <header>
-        <h1>My Career Interest: Cybersecurity</h1>
-        <p>Student Number: <strong>230045014</strong></p>
-        <a href="project.html" class="btn">View My Project</a>
+    <!-- Header -->
+    <header style="display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 40px 20px; background-color: #34495e; color: #fff; text-align: center;">
+        <div>
+            <h1>My Career Interest: Cybersecurity</h1>
+            <p>Student Number: <strong>230045014</strong></p>
+        </div>
+        <!-- Buttons container -->
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+            <a href="project.html" class="btn">View My Project</a>
+            <a href="http://localhost/230045014/dynamic.php" class="btn" target="_blank">View Date (PHP)</a>
+            <a href="http://localhost:8080/230045014/dynamic.jsp" class="btn" target="_blank">View Time (JSP)</a>
+        </div>
     </header>
 
+    <!-- Main Content -->
     <div class="main-flex-container">
         <div class="photo-side">
-            <img src="my_image.jpg" alt="My Photo" class="profile-photo" />
+            <img src="images/my_image.jpg" alt="My Photo" class="profile-photo" />
         </div>
         <div class="container">
+            <!-- About Me -->
             <section>
                 <h2>About Me</h2>
                 <p>
@@ -30,6 +40,7 @@
                 </p>
             </section>
 
+            <!-- Areas of Interest -->
             <section>
                 <h2>Areas of Interest</h2>
                 <ul>
@@ -40,6 +51,7 @@
                 </ul>
             </section>
 
+            <!-- Professional Links -->
             <section>
                 <h2>Professional Links</h2>
                 <p>
@@ -49,19 +61,20 @@
                 </p>
             </section>
 
+            <!-- Background Sound -->
             <section>
-     <h2>Background Sound</h2>
-     <audio controls autoplay>
-    <source src="Onset-Music-Group-feat-Zandimaz-Maphupho-Fezeka-(CeeNaija.com).mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-</audio>
+                <h2>Background Sound</h2>
+                <audio controls autoplay loop>
+                    <source src="media/Onset-Music-Group-feat-Zandimaz-Maphupho-Fezeka-(CeeNaija.com).mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
             </section>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         &copy; 2025 230045014 — Cybersecurity Portfolio
     </footer>
 </body>
-
 </html>
